@@ -1,0 +1,68 @@
+.my-modal {
+    background-color: #fff;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50% ;
+    padding: 50px;
+}
+
+
+  
+
+.my-modal.item-enter {
+    /* opacity: 0; */
+    left: 150%;
+    /* display: inline-block; */
+    transform: translate(-50%);
+    position: absolute;
+}
+  
+  
+.my-modal.item-enter-active {
+    /* opacity: 1; */
+    left: 50%;
+    /* display: inline-block; */
+    position: absolute;
+    transform: translate(-50%);
+    transition: left 1000ms ease;
+}
+  
+.my-modal.item-exit {
+    position: absolute;
+    /* display: inline-block; */
+    transform: translate(-50%);
+    left: 50%;
+}
+.my-modal.item-exit-active {
+    transition: left 1000ms ease;
+    left: -150%;
+    transform: translate(-50%);
+    /* display: inline-block; */
+    position: absolute;
+}
+
+
+.dialog-enter {
+    opacity: 0.01;
+    transform: scale(1.1);
+  }
+  
+.dialog-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms;
+}
+
+.dialog-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.dialog-exit-active {
+    opacity: 0.01;
+    transform: scale(1.1);
+    transition: all 300ms;
+}

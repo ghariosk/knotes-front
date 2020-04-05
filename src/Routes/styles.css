@@ -1,0 +1,55 @@
+/* .route-enter {
+    opacity: 0;
+  }
+.route-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.route-exit {
+    opacity: 1;
+}
+.route-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+} */
+
+
+.page {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: 100%;
+
+}
+ 
+.page-enter {
+    position: absolute;
+    opacity: 0;
+    transform: scale(1.1) translate(-50%);
+    left: 150%;
+}
+
+.page-enter-active {
+    position: absolute;
+    opacity: 1;
+    transform: scale(1) translate(-50%);
+    left: 50%;
+    transition: all 700ms ease-in;
+}
+
+.page-exit {
+    position: absolute;
+    opacity: 1;
+    left: 50%;
+    transform: scale(1) translate(-50%);
+}
+
+.page-exit-active {
+    position: absolute;
+    opacity: 0;
+    left: -100%;
+    transform: scale(0.9) translate(-50%);
+    transition: all 700ms ease-in;
+}
+  

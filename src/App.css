@@ -1,0 +1,68 @@
+
+
+.ui.container.knotes {
+  background-color: #2c9eff;
+  color: white;
+  margin-top: 75px;
+  min-height: 400px;
+  border-radius: 1em;
+}
+
+.knotes.center-in-columns {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.center-in-columns {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container-padding {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+
+span.knotes {
+  color: #f2711c;
+}
+
+.ui.form .field>label {
+  color:white;
+}
+.ui.checkbox input:focus~label {
+  color: white;
+}
+
+.ui.checkbox input~label {
+  color: white;
+}
+
+.container.knotes button.back {
+  position: relative;
+  top: -30px;
+}
+
+.padding-nav {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+body .ui.dimmer {
+  transform: translate(0%);
+}

@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-knotes-front-dev-154859-authRole",
+            "UnauthRoleArn": "arn:aws:iam::509688276117:role/amplify-knotes-front-dev-154859-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::509688276117:role/amplify-knotes-front-dev-154859-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-knotes-front-dev-154859-deployment",
+            "UnauthRoleName": "amplify-knotes-front-dev-154859-unauthRole",
+            "StackName": "amplify-knotes-front-dev-154859",
+            "StackId": "arn:aws:cloudformation:eu-central-1:509688276117:stack/amplify-knotes-front-dev-154859/7fd85bf0-75a9-11ea-a8bd-0ab3055dd4ce",
+            "AmplifyAppId": "d3jodlvj468bfw"
+        }
+    }
+}

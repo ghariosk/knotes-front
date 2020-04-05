@@ -1,0 +1,150 @@
+
+
+.container.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .image img {
+    width: 150px;
+    border-radius: 1em;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.item .image label {
+    position: absolute;
+}
+
+.items .item {
+    grid-template-areas:
+    'img content';
+    display: grid;
+    grid-template-columns: 160px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .items .item {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 250px; */
+        /* display: block; */
+        grid-template-columns: 90px auto;
+
+    }
+    .ui.fitted.divider {
+        margin: 10px
+    }
+    .item .image img {
+        object-fit: fill;
+    }
+    .item .image img {
+        width: 70px;
+        height: 70px;
+        /* object-position: top; */
+        border-radius: 50%;
+    }
+
+    .item .image {
+        display: inline;
+    }
+
+    .ui.label>.detail {
+        display: none;
+    }
+
+    .ui.image.label {
+        width: unset;
+        position: block;
+        transform: unset;
+    }
+}
+
+.items .item .image {
+    grid-area: img;
+   
+}
+
+.items .item .content {
+    grid-area: content
+}
+
+.items:not(.my-modal) > .item {
+    border-radius: 1em;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;    
+    
+}
+
+.items:not(.my-modal) .item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.items .item.blue {
+    background-color: #0066ffd1;
+    color: white
+}
+
+.items .item.red {
+    background-color: #ff3939ed;
+    color: white;
+}
+
+.items .item.green {
+    background-color: #09c709e3;
+    color:white
+}
+
+.items .item.purple {
+    background-color: #b40ed2ba;
+    color:white
+}
+
+.items .item.black {
+    background-color: black;
+    color: white;
+}
+
+.items .item.yellow {
+    background-color: #f3ed47;
+    color:#7888f5;
+}
+
+.items .item .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 20px;
+}
+
+
+ .ui.image.label {
+    position: absolute;
+    transform: translate(-1.5px, -38px);
+    width: 150px !important;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    border-radius: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .space-between {
+      display: block;
+    }
+    .ui.image.label {
+        max-width: 80px;
+        display: block;
+        transform: unset;
+        position: unset;
+        text-align: center;
+        border-radius: 1em;
+    }
+  }
